@@ -1,0 +1,33 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-07-09/server.json",
+  "name": "io.github.pcmarts/recruiter-roles-mcp",
+  "description": "Search the Recruiter Roles job board — live recruiter and talent-acquisition jobs, companies, sectors, locations, and market stats.",
+  "version": "1.0.0",
+  "repository": {
+    "url": "https://github.com/pcmarts/recruiter-roles-mcp",
+    "source": "github"
+  },
+  "websiteUrl": "https://recruiterroles.com/mcp",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "recruiter-roles-mcp",
+      "version": "1.0.0",
+      "transport": { "type": "stdio" },
+      "environmentVariables": [
+        {
+          "name": "RECRUITER_ROLES_API_KEY",
+          "description": "Your Recruiter Roles API key (rr_live_...). Get one free at https://recruiterroles.com/api-access",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://recruiterroles.com/api/mcp"
+    }
+  ]
+}

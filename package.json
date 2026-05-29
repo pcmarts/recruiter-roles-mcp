@@ -1,0 +1,53 @@
+{
+  "name": "recruiter-roles-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for the Recruiter Roles job board — search live recruiter and talent-acquisition jobs, companies, sectors, locations, and market stats with your free API key.",
+  "license": "MIT",
+  "author": "Recruiter Roles <hello@recruiterroles.com>",
+  "homepage": "https://recruiterroles.com/mcp",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pcmarts/recruiter-roles-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pcmarts/recruiter-roles-mcp/issues"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "recruiter-roles",
+    "jobs",
+    "recruiting",
+    "talent-acquisition",
+    "job-board",
+    "claude",
+    "cursor",
+    "chatgpt"
+  ],
+  "type": "module",
+  "bin": {
+    "recruiter-roles-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "server.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.26.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0"
+  }
+}
