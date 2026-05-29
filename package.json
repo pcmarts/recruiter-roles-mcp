@@ -2,6 +2,7 @@
   "name": "recruiter-roles-mcp",
   "version": "1.0.0",
   "description": "MCP server for the Recruiter Roles job board — search live recruiter and talent-acquisition jobs, companies, sectors, locations, and market stats with your free API key.",
+  "mcpName": "io.github.pcmarts/recruiter-roles-mcp",
   "license": "MIT",
   "author": "Recruiter Roles <hello@recruiterroles.com>",
   "homepage": "https://recruiterroles.com/mcp",
