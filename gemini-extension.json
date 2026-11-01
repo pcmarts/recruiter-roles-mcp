@@ -1,0 +1,23 @@
+{
+  "name": "recruiter-roles-mcp",
+  "version": "1.0.0",
+  "description": "Search live recruiter and talent-acquisition jobs, companies, sectors, locations, and market stats from the Recruiter Roles job board. Read-only; free API key.",
+  "mcpServers": {
+    "recruiter-roles": {
+      "httpUrl": "https://recruiterroles.com/api/mcp",
+      "headers": {
+        "Authorization": "Bearer ${RECRUITER_ROLES_API_KEY}"
+      },
+      "description": "Hosted Recruiter Roles MCP server (Streamable HTTP, read-only)"
+    }
+  },
+  "contextFileName": "GEMINI.md",
+  "settings": [
+    {
+      "name": "Recruiter Roles API key",
+      "description": "Free API key (rr_live_...). Create one at https://recruiterroles.com/api-access",
+      "envVar": "RECRUITER_ROLES_API_KEY",
+      "sensitive": true
+    }
+  ]
+}

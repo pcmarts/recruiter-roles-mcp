@@ -9,6 +9,7 @@ Read-only. Authenticated with a free Recruiter Roles API key.
 
 - **Hosted (recommended):** `https://recruiterroles.com/api/mcp` (Streamable HTTP)
 - **Local (this package):** `npx recruiter-roles-mcp` (stdio, for stdio-only clients)
+- **Gemini CLI extension:** `gemini extensions install https://github.com/pcmarts/recruiter-roles-mcp`
 - **Get a free API key:** https://recruiterroles.com/api-access
 - **Docs:** https://recruiterroles.com/mcp · REST API: https://recruiterroles.com/api-docs
 
@@ -67,6 +68,16 @@ clients that can't set headers).
 ```
 https://recruiterroles.com/api/mcp?key=rr_live_YOUR_KEY
 ```
+
+**Gemini CLI** — this repo is also a Gemini CLI extension that wires up the
+hosted server. Install it and enter your key when prompted (it is stored in the
+system keychain, never in a file):
+
+```bash
+gemini extensions install https://github.com/pcmarts/recruiter-roles-mcp
+```
+
+To add or change the key later: `gemini extensions config recruiter-roles-mcp`.
 
 ### Local stdio server (this npm package)
 
